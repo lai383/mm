@@ -9,7 +9,29 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 日常•野餐之旅.</tw-noscript></noscript></tw-story>
-<tw-storydata name="日常•野餐之旅" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="52E9D483-F9D6-43EB-B908-C730FC1D9BE7" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">if (!window.myAudio) {
+<tw-storydata name="日常•野餐之旅" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="52E9D483-F9D6-43EB-B908-C730FC1D9BE7" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+tw-passage {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">if (!window.myAudio) {
     window.myAudio = new Audio('印象曲43.mp3'); 
     window.myAudio.loop = true;
 }
@@ -17,53 +39,9 @@
 document.addEventListener('click', function() {
     window.myAudio.play().catch(function(error) {
         console.log("等待点击...");
-    });
-}, { once: true });
+   
+</script><tw-passagedata pid="1" name="未命名片段" tags="" position="450,25" size="100,100">[[点击开启音乐并进入游戏-&gt;0章]]
 
-var meta = document.createElement('meta');
-meta.name = 'viewport';
-meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-document.getElementsByTagName('head')[0].appendChild(meta);
-
-</script><tw-passagedata pid="1" name="未命名片段" tags="" position="575,125" size="100,100">&lt;div style=&quot;
-  position: relative; 
-  width: 100%; 
-  height: 500px; 
-  background-image: url(&#39;BB73019F36B1E6F89E930D34FD05944E.png&#39;); 
-  background-size: cover; 
-  background-position: center;
-&quot;&gt;
-  &lt;!-- 這裡控制文字在左邊的精準位置 --&gt;
-  &lt;div style=&quot;
-    position: absolute; 
-    left: 45px; 
-    top: 60px; 
-    width: 320px;
-    color: white; 
-    font-size: 20px; 
-    font-weight: bold;
-    text-shadow: 2px 2px 4px #000000;
-    line-height: 1.6;
-    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif;
-  &quot;&gt;
-    作者声明&lt;br&gt;&lt;br&gt;
-    不知道应该是文游，美工是我们亲爱的小咩儿&lt;br&gt;&lt;br&gt;&lt;br&gt;
-    
-    &lt;span class=&quot;custom-link&quot;&gt;[[开始-&gt;下一章]]&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;style&gt;
-  .custom-link a {
-    color: white !important;
-    text-decoration: none !important;
-    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
-  }
-  .custom-link a:hover {
-    color: #ffd700 !important; 
-    text-decoration: underline !important;
-  }
-&lt;/style&gt;
 </tw-passagedata><tw-passagedata pid="2" name="下一章" tags="" position="675,125" size="100,100">&lt;div style=&quot;
   position: relative; 
   width: 100%; 
@@ -3965,7 +3943,46 @@ cursor: pointer !important;
     animation: jump 0.8s infinite alternate ease-in-out;
   }
   @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
-&lt;/style&gt;</tw-passagedata></tw-storydata>
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="55" name="0章" tags="" position="575,125" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 500px; 
+  background-image: url(&#39;BB73019F36B1E6F89E930D34FD05944E.png&#39;); 
+  background-size: cover; 
+  background-position: center;
+&quot;&gt;
+  &lt;!-- 這裡控制文字在左邊的精準位置 --&gt;
+  &lt;div style=&quot;
+    position: absolute; 
+    left: 45px; 
+    top: 60px; 
+    width: 320px;
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 1.6;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif;
+  &quot;&gt;
+    作者声明&lt;br&gt;&lt;br&gt;
+    不知道应该是文游，美工是我们亲爱的小咩儿&lt;br&gt;&lt;br&gt;&lt;br&gt;
+    
+    &lt;span class=&quot;custom-link&quot;&gt;[[开始-&gt;下一章]]&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+  .custom-link a {
+    color: white !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+  }
+  .custom-link a:hover {
+    color: #ffd700 !important; 
+    text-decoration: underline !important;
+  }
+&lt;/style&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
