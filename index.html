@@ -15,11 +15,11 @@ gameAudio.loop = true;
 
 function playBgmAfterClick() {
     gameAudio.play().then(function() {
-        console.log("手機音頻權限解鎖成功");
+        console.log("手機音頻權限解鎖成功！");
         document.removeEventListener('click', playBgmAfterClick);
         document.removeEventListener('touchstart', playBgmAfterClick);
     }).catch(function(error) {
-        console.log("等待下一次點擊...", error);
+        console.log("等待玩家下一次點擊...", error);
     });
 }
 
@@ -3951,10 +3951,13 @@ cursor: pointer !important;
     line-height: 1.6;
     font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif;
   &quot;&gt;
-    作者声明&lt;br&gt;&lt;br&gt;
-    不知道应该是文游，美工是我们亲爱的小咩儿&lt;br&gt;&lt;br&gt;&lt;br&gt;
-    
-    &lt;span class=&quot;custom-link&quot;&gt;[[开始-&gt;下一章]]&lt;/span&gt;
+ 作者声明&lt;br&gt;&lt;br&gt;
+不知道应该是文游
+美工是我们亲爱的小咩儿
+额还有这边建议用电脑或者平板打开
+电脑看的比较清楚
+    &lt;br&gt;&lt;br&gt;&lt;br&gt;
+       &lt;span class=&quot;custom-link&quot;&gt;[[开始-&gt;下一章]]&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
