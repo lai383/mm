@@ -15,11 +15,11 @@ gameAudio.loop = true;
 
 function playBgmAfterClick() {
     gameAudio.play().then(function() {
-        console.log("手機音頻權限解鎖成功！");
+        console.log("手機音頻權限解鎖成功");
         document.removeEventListener('click', playBgmAfterClick);
         document.removeEventListener('touchstart', playBgmAfterClick);
     }).catch(function(error) {
-        console.log("等待玩家下一次點擊...", error);
+        console.log("等待下一次點擊...", error);
     });
 }
 
