@@ -9,8 +9,8 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 日常•野餐之旅.</tw-noscript></noscript></tw-story>
-<tw-storydata name="日常•野餐之旅" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="52E9D483-F9D6-43EB-B908-C730FC1D9BE7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">if (!window.myAudio) {
-    window.myAudio = new Audio('印象曲 43.mp3'); 
+<tw-storydata name="日常•野餐之旅" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="52E9D483-F9D6-43EB-B908-C730FC1D9BE7" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">if (!window.myAudio) {
+    window.myAudio = new Audio('印象曲43.mp3'); 
     window.myAudio.loop = true;
 }
 
@@ -19,7 +19,13 @@ document.addEventListener('click', function() {
         console.log("等待点击...");
     });
 }, { once: true });
-</script><tw-passagedata pid="1" name="未命名片段" tags="" position="575,225" size="100,100">&lt;div style=&quot;
+
+var meta = document.createElement('meta');
+meta.name = 'viewport';
+meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+document.getElementsByTagName('head')[0].appendChild(meta);
+
+</script><tw-passagedata pid="1" name="未命名片段" tags="" position="575,125" size="100,100">&lt;div style=&quot;
   position: relative; 
   width: 100%; 
   height: 500px; 
@@ -58,29 +64,25 @@ document.addEventListener('click', function() {
     text-decoration: underline !important;
   }
 &lt;/style&gt;
-</tw-passagedata><tw-passagedata pid="2" name="下一章" tags="" position="575,350" size="100,100">&lt;!-- 1. 全域大外殼 --&gt;
-&lt;div style=&quot;
+</tw-passagedata><tw-passagedata pid="2" name="下一章" tags="" position="675,125" size="100,100">&lt;div style=&quot;
   position: relative; 
   width: 100%; 
   height: 600px; 
   overflow: hidden;
 &quot;&gt;
 
-  &lt;!-- 2. 最底層：天空背景圖 --&gt;
   &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
   &quot;&gt;
 
-  &lt;!-- 3. 第二層：獨立的雙長方形聊天框圖片 --&gt;
   &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
   &quot;&gt;
 
-  &lt;!-- 4. 第三層：【完美復原】把「旁白：」精準放回您調好的小長方形裡 --&gt;
   &lt;div style=&quot;
     position: absolute;
-    left: 11%;        /* 👈 完美復原左右 */
-    top: 55%;         /* 👈 完美復原高度，絕不飛上天 */
+    left: 11%;       
+    top: 55%;        
     color: white; 
     font-size: 22px; 
     font-weight: bold; 
@@ -91,11 +93,10 @@ document.addEventListener('click', function() {
     旁白：
   &lt;/div&gt;
 
-  &lt;!-- 5. 第三層：【完美復原】把「台詞內容」精準放回您調好的大長方形裡 --&gt;
   &lt;div style=&quot;
     position: absolute;
-    left: 10%;          /* 👈 完美復原左右 */
-    top: 67%;           /* 👈 完美復原高度，絕不飛上天 */
+    left: 10%;         
+    top: 65%;          
     width: 60%;         
     color: white; 
     font-size: 20px; 
@@ -108,19 +109,17 @@ document.addEventListener('click', function() {
     临近春日，天气正是让人舒适的温度，于是无敌黑暗深渊战龙队决定出发野餐
   &lt;/div&gt;
 
-  &lt;!-- 6. 第四層：點擊繼續按鈕，這次也微調了位置，讓它乖乖待在大框框內部的右下角 --&gt;
   &lt;div class=&quot;next-page-btn&quot; style=&quot;
     position: absolute;
-    right: 18%;         /* 距離右邊邊界 */
-    top: 75%;           /* 👈 調低高度，讓它沉進大框框右下角 */
+    right: 18%;       
+    top: 75%;          
     z-index: 4; 
   &quot;&gt;
-    [[点击继续-&gt;第三章]]
+    [[▼-&gt;第三章]]
   &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- 7. 樣式控制代碼 --&gt;
 &lt;style&gt;
   .next-page-btn tw-link {
     color: #ffd700 !important; 
@@ -141,29 +140,25 @@ document.addEventListener('click', function() {
   @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
 &lt;/style&gt;
 
-</tw-passagedata><tw-passagedata pid="3" name="第三章" tags="" position="575,475" size="100,100">&lt;!-- 1. 全域大外殼 --&gt;
-&lt;div style=&quot;
+</tw-passagedata><tw-passagedata pid="3" name="第三章" tags="" position="775,125" size="100,100">&lt;div style=&quot;
   position: relative; 
   width: 100%; 
   height: 600px; 
   overflow: hidden;
 &quot;&gt;
 
-  &lt;!-- 2. 最底層：天空背景圖 --&gt;
   &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
   &quot;&gt;
 
-  &lt;!-- 3. 第二層：獨立的雙長方形聊天框圖片 --&gt;
   &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
   &quot;&gt;
 
-  &lt;!-- 4. 第三層：【完美復原】把「旁白：」精準放回您調好的小長方形裡 --&gt;
   &lt;div style=&quot;
     position: absolute;
-    left: 11%;        /* 👈 完美復原左右 */
-    top: 55%;         /* 👈 完美復原高度，絕不飛上天 */
+    left: 11%;        
+    top: 55%;         
     color: white; 
     font-size: 22px; 
     font-weight: bold; 
@@ -174,11 +169,10 @@ document.addEventListener('click', function() {
     旁白：
   &lt;/div&gt;
 
-  &lt;!-- 5. 第三層：【完美復原】把「台詞內容」精準放回您調好的大長方形裡 --&gt;
   &lt;div style=&quot;
     position: absolute;
-    left: 10%;          /* 👈 完美復原左右 */
-    top: 67%;           /* 👈 完美復原高度，絕不飛上天 */
+    left: 10%;          
+    top: 65%;          
     width: 60%;         
     color: white; 
     font-size: 20px; 
@@ -191,19 +185,17 @@ document.addEventListener('click', function() {
     午后，阳光暖而不烈，轻柔的微风拂过郊外青绿草坪，带着淡淡的花草香气
   &lt;/div&gt;
 
-  &lt;!-- 6. 第四層：點擊繼續按鈕，這次也微調了位置，讓它乖乖待在大框框內部的右下角 --&gt;
   &lt;div class=&quot;next-page-btn&quot; style=&quot;
     position: absolute;
-    right: 18%;         /* 距離右邊邊界 */
-    top: 75%;           /* 👈 調低高度，讓它沉進大框框右下角 */
+    right: 18%;         
+    top: 75%;           
     z-index: 4; 
   &quot;&gt;
-    [[点击继续-&gt;第4章]]
+    [[▼-&gt;第4章]]
   &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- 7. 樣式控制代碼 --&gt;
 &lt;style&gt;
   .next-page-btn tw-link {
     color: #ffd700 !important; 
@@ -224,7 +216,3756 @@ document.addEventListener('click', function() {
   @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
 &lt;/style&gt;
 
-</tw-passagedata><tw-passagedata pid="4" name="第四章" tags="" position="575,600" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="第4章" tags="" position="700,600" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="4" name="第4章" tags="" position="575,225" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  六人找到了一处阴凉的位置，坐在野餐垫上面，各色零食点心摆放整齐，周边的氛围十分轻松闲适
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第5章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="5" name="第5章" tags="" position="675,225" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    幽羽缠着拉嬉笑打闹，又奔又跳吵吵闹闹，弗洛拉•维尔德斯慵懒倚靠着树干闭目休憩，麾格静坐一旁看着书籍，看起来十分有距离感，格拉斯亚独自坐在侧边位置，淡淡笑着
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第6章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="6" name="第6章" tags="" position="775,225" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    卡斯珀•格雷坐在角落，提不起半点兴致，他抬手掀开自己的野餐盒，视线落下的瞬间，他的身形骤然僵住
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第7章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="7" name="第7章" tags="" position="575,325" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    点心上趴着一只小虫，它缓慢蠕动着，看起来特别有蛋白质。卡斯珀眉头紧皱，强烈的抵触与恐惧瞬间席卷而来
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第8章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="8" name="第8章" tags="" position="675,325" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    卡斯珀：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “…好恶心”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第9章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="9" name="第9章" tags="" position="775,325" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    卡斯珀：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “不行不行，必须弄死…不能留。”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第10章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="10" name="第10章" tags="" position="575,425" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    卡斯珀：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “但是好恶心…！”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第11章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="11" name="第11章" tags="" position="675,425" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白 :
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  心里两种念头不停拉扯，莫名的心思却催着他必须解决掉这只虫子。他异样的神态最先被树荫下的弗洛拉察觉，很快众人纷纷围拢过来，看清饭盒里的虫子后，各自露出截然不同的神情
+  &lt;/div&gt;
+
+  &lt;div class=&quot;custom-choice-container&quot; style=&quot;
+    position: absolute;
+    left: 10.7%;          
+    width: 78.5%;         
+    top: 10%;           
+    display: flex;
+    flex-direction: column; 
+    gap: 0px !important;          
+    z-index: 4; 
+  &quot;&gt;
+    &lt;div class=&quot;game-choice-btn&quot;&gt;[[幽羽-&gt;1]]&lt;/div&gt;
+    &lt;div class=&quot;game-choice-btn&quot;&gt;[[弗洛拉•维尔德斯-&gt;2]]&lt;/div&gt;
+    &lt;div class=&quot;game-choice-btn&quot;&gt;[[拉-&gt;3]]&lt;/div&gt;
+    &lt;div class=&quot;game-choice-btn&quot;&gt;[[麾歌-&gt;4]]&lt;/div&gt;
+    &lt;div class=&quot;game-choice-btn&quot;&gt;[[格拉斯亚-&gt;5]]&lt;/div&gt;
+     &lt;div class=&quot;game-choice-btn&quot;&gt;[[自己动手-&gt;6]]&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .custom-choice-container br {
+    display: none !important;
+  }
+
+  .game-choice-btn {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .game-choice-btn tw-link, .game-choice-btn a {
+    display: block !important;
+    text-align: center !important;      
+    width: 100% !important;
+    padding: 12px 0 !important;         
+    margin: 0 !important;
+    
+    background: rgba(210, 210, 210, 0.45) !important; 
+    border-left: 2px solid #000000 !important;   
+    border-right: 2px solid #000000 !important;
+    border-top: 1px solid #000000 !important;  
+    border-bottom: 1px solid #000000 !important;
+    border-radius: 0px !important;               
+    
+    color: #ffffff !important;                
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .custom-choice-container .game-choice-btn:first-child tw-link,
+  .custom-choice-container .game-choice-btn:first-child a {
+    border-top: 2px solid #000000 !important;
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+  }
+
+  .custom-choice-container .game-choice-btn:last-child tw-link,
+  .custom-choice-container .game-choice-btn:last-child a {
+    border-bottom: 2px solid #000000 !important;
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+  }
+
+  .game-choice-btn tw-link:hover, .game-choice-btn a:hover {
+    background: rgba(255, 255, 255, 0.7) !important; 
+    color: #ffffff !important;             
+  }
+&lt;/style&gt;
+
+</tw-passagedata><tw-passagedata pid="12" name="6" tags="" position="1150,225" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="5" tags="" position="1150,550" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     卡斯珀眼神微微看着格拉斯亚，像是在求助，格拉斯亚静坐在野餐垫最侧边，脸上还是那副温和笑意
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第28章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="14" name="4" tags="" position="775,575" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    卡斯珀拉了拉麾歌，带着一点求助的意谓。只见麾歌淡淡抬眼扫过餐盒，又看了一眼对方紧绷的神情，语气平淡而疏离
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第40章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="15" name="3" tags="" position="200,200" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  卡斯珀僵着身子不敢动，指尖微微蜷缩，目光几乎是不受控制地轻轻偏向了拉
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第43章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="16" name="2" tags="" position="400,575" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    卡斯珀没能躲开弗洛拉投来的视线，他低着头，默默承受着他的目光
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第36章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="17" name="1" tags="" position="0,600" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    卡斯珀怔怔盯着盒内，忽然一声响动骤然响起，吓得他浑身一颤
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第12章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="18" name="第12章" tags="" position="100,600" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    抬眼就看见纤细的手掌，还有凑近时垂落在脸颊旁的绿色发丝
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第13章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="19" name="第13章" tags="" position="200,600" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    幽羽：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “好啦！不就是一只虫子嘛~幽羽帮你拍死啦！”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第14章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="20" name="第14章" tags="" position="0,700" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    ……卡斯珀的眼神重新回到盒子上
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第15章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="21" name="第15章" tags="" position="100,700" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    …确实是拍死了，但是饭盒也碎掉了
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第16章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="22" name="第16章" tags="" position="200,700" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    拉：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “啊一一幽羽！你把食物打碎了我们吃什么呀！”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第17章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="23" name="第17章" tags="" position="0,800" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    幽羽：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “这不还有吃的吗！那个有虫子了也不能吃了呀~！”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第18章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="24" name="第18章" tags="" position="100,800" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    拉有些抱怨的语气传来，幽羽叽叽喳喳的反驳回去，和拉吵了起来
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第19章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="25" name="第19章" tags="" position="200,800" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   卡斯珀看着他们有些无奈
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第20章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="26" name="第20章" tags="" position="100,900" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   卡斯珀抬起头看着天空
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第21章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="27" name="第21章" tags="" position="475,950" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   阳光还是暖的，风还是软的，属于野餐的氛围，一点点回到了所有人身边
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第23章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    
+cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="28" name="第23章" tags="" position="575,950" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   卡斯珀感受着吹来的微风，风拂过发梢，阳光落在野餐垫上，零食的甜香混着青草香，身边是性格各异却包容他的人
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第24章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="29" name="第24章" tags="" position="675,950" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   他慢慢放松肩膀，拿起手边的点心，没有缩在角落，而是抬头看向身边的同伴
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第25章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="30" name="第25章" tags="" position="775,950" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   不用强迫自己刻意融入群体，不用硬撑着自己坚强，也无需因为自身胆怯而惴惴不安
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第26章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="31" name="第26章" tags="" position="875,950" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   这场意外插曲，倒是让卡斯珀看清了同伴之间，细碎又温暖的心意
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第27章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="32" name="第27章" tags="" position="975,950" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   最好的日子大概就是清风吹过，日子平静舒适，而想见的朋友都在他身边，对他来说，这便是最美好的时光了
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第27章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="33" name="第28章" tags="" position="1250,550" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    格拉斯亚：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     “卡斯珀同学，你不如试试叫那边的麾歌先生来帮帮忙？”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第29章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="34" name="第29章" tags="" position="1350,550" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     格拉斯亚偏过头看着旁边还在看书的麾歌
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第30章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="35" name="第30章" tags="" position="1150,650" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    麾歌：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     “噢，好稀奇，相处了这么久我第一次知道你怕虫”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第31章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="36" name="第31章" tags="" position="1250,650" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     麾歌头都没抬，眼神黏在书籍里，但话里话外带有一点阴阳的味道
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第32章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="37" name="第32章" tags="" position="1350,650" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    格拉斯亚：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     “呵呵。怕怎么了，你不怕那是因为你比虫还低级”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第33章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="38" name="第33章" tags="" position="1150,750" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     格拉斯亚表面维持笑意，在心里却暗骂了一句神经病，优雅起身远离了野餐垫，走前顺便拿起一个野果丢在摩歌的脸上
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第34章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="39" name="第34章" tags="" position="1250,750" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+     只留下卡斯珀一个人孤立无援。 当他低头向饭盒看去时，虫子早已不见踪影，真是可喜可贺，可喜可贺
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第35章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="40" name="第35章" tags="" position="1350,750" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   他抬起头看着天空
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第20章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="41" name="第36章" tags="" position="500,575" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    弗洛拉慢悠悠直起身子，慵懒扫过餐盒里的小虫，视线轻飘飘落回卡斯珀还强装镇定的模样上，嘴角勾出一点轻佻的笑意，语气散漫又带着打趣
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第37章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="42" name="第37章" tags="" position="600,575" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    弗洛拉：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “不过一只小虫子，就把你吓成这样，你这个绷着不敢动的样子，倒是比虫子有意思多了”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第38章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="43" name="第38章" tags="" position="400,675" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   他嘴上不停逗弄，可手上动作却一点不慢
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第39章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="44" name="第39章" tags="" position="500,675" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+   没让卡斯珀再看一眼，随手拿起餐盒丢到一旁草丛边，之后又重新靠回树干，没再打趣他半分，分寸收得刚刚好。
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第20章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="45" name="第40章" tags="" position="875,575" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    麾歌：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    “虫子落在食物上，确实让人不适，你心里觉得害怕恶心，都是很正常的，冷静处理掉就没事了”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第41章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="46" name="第41章" tags="" position="975,575" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    麾歌上前快速清理掉虫子，把餐盒擦干净摆回原位，动作干脆利落，神色平淡。随即立刻退回到自己原本的位置，恢复沉默寡言的模样
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第42章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="47" name="第42章" tags="" position="775,675" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;       
+    top: 55%;        
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;         
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+    仿佛刚才只是做了一件再普通不过的小事
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;       
+    top: 75%;          
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第20章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="48" name="第43章" tags="" position="300,200" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  拉先是挑了挑眉，习惯性调侃
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第44章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="49" name="第44章" tags="" position="400,200" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    拉：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  “哎哟——这小东西还挺会挑地方，专挑好吃的趴着～”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第45章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="50" name="第45章" tags="" position="200,300" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  话音刚落，对上卡斯珀苍白的样子，他瞬间收起了玩笑
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第46章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="51" name="第46章" tags="" position="300,300" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  他动作轻轻地把对方的餐盒往自己怀里一拉，又抽了两张干净纸巾，轻轻挡在他眼前
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第47章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="52" name="第47章" tags="" position="400,300" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    拉：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  “不想看就别瞅嘛，有我在呢，分分钟搞定啦～”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第48章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="53" name="第48章" tags="" position="200,400" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    旁白：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  他背对着卡斯珀清理虫子，动作利落又小心，处理完后，没把空餐盒递回去，他把自己面前没动过的草莓蛋糕轻轻推到卡斯珀手边
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第49章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="54" name="第49章" tags="" position="300,400" size="100,100">&lt;div style=&quot;
+  position: relative; 
+  width: 100%; 
+  height: 600px; 
+  overflow: hidden;
+&quot;&gt;
+
+  &lt;img src=&quot;0F0BFFE11D53D730F05D41A13E1AC25C.jpg&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;
+  &quot;&gt;
+
+  &lt;img src=&quot;2FB806ACD34BB56C4EAB2F04C6806139.png&quot; style=&quot;
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2;
+  &quot;&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 11%;        
+    top: 55%;         
+    color: white; 
+    font-size: 22px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    z-index: 3;
+  &quot;&gt;
+    拉：
+  &lt;/div&gt;
+
+  &lt;div style=&quot;
+    position: absolute;
+    left: 10%;          
+    top: 65%;          
+    width: 60%;         
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    line-height: 1.6;
+    z-index: 3;
+  &quot;&gt;
+  “虫子处理完啦，这下不用害怕了吧~？”
+  &lt;/div&gt;
+
+  &lt;div class=&quot;next-page-btn&quot; style=&quot;
+    position: absolute;
+    right: 18%;         
+    top: 75%;           
+    z-index: 4; 
+  &quot;&gt;
+    [[▼-&gt;第20章]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+  .next-page-btn tw-link {
+    color: #ffd700 !important; 
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    font-family: &#39;Microsoft YaHei&#39;, &#39;微软雅黑&#39;, sans-serif !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8) !important;
+    cursor: pointer !important;
+  }
+  .next-page-btn tw-link:hover {
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+  }
+  .next-page-btn {
+    animation: jump 0.8s infinite alternate ease-in-out;
+  }
+  @keyframes jump { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
+&lt;/style&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
